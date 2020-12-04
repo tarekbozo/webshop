@@ -20,8 +20,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use('/api/products', productRouts);
-app.use(notFound);
-app.use(errorHandler);
 
 const __dirname = path.resolve();
 
@@ -36,6 +34,8 @@ if (process.env.NODE_ENV === 'production') {
     res.send('API is running....');
   });
 }
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 const MODE = process.env.NODE_ENV;

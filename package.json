@@ -17,10 +17,6 @@
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tarekbozo/web-shop.git"
-  },
   "jest": {
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
@@ -30,10 +26,6 @@
   "keywords": [],
   "author": "Tarek Bouzo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tarekbozo/web-shop/issues"
-  },
-  "homepage": "https://github.com/tarekbozo/web-shop#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
